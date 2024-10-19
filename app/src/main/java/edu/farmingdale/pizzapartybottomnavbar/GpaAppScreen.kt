@@ -29,6 +29,7 @@ fun GpaAppScreen() {
 
 
     // Declare variables for GPA result and background color
+
     var gpa by remember { mutableStateOf("") }
     var backColor by remember { mutableStateOf(Color.Cyan) }
     var btnLabel by remember { mutableStateOf("Calulate GPA") }
@@ -76,7 +77,7 @@ fun GpaAppScreen() {
                         gpaVal in 60.0..79.0 -> Color.Yellow
                         else -> Color.Green
                     }
-                    btnLabel = "Clear"
+                    btnLabel = "Clear" // changes the button label to "Clear"
                 } else {
                     gpa = "Invalid input"
                 }
