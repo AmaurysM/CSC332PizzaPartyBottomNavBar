@@ -54,7 +54,7 @@ fun PizzaPartyScreen( modifier: Modifier = Modifier) {
         )
         RadioGroup(
             labelText = "How hungry?",
-            radioOptions = listOf("Light", "Medium", "Very hungry"),
+            radioOptions = listOf("Light", "Medium", "hungry", "Very hungry"),
             selectedOption = hungerLevel,
             onSelected = { hungerLevel = it },
             modifier = modifier
