@@ -38,8 +38,10 @@ fun Screen3() {
 
     val context = LocalContext.current
     Column ( modifier = Modifier
+        .background(Brush.verticalGradient(listOf(Color.White, Color.Gray)))
         .padding(horizontal = 20.dp)
-        .fillMaxSize(),
+        .fillMaxSize()
+        ,
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally){
         Slider(value = sliderValue, onValueChange = { sliderValue=it }, Modifier.fillMaxWidth()
