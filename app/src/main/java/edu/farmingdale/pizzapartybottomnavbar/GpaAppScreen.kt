@@ -30,22 +30,25 @@ fun GpaAppScreen() {
 
     // Declare variables for GPA result and background color
     var gpa by remember { mutableStateOf("") }
-    var backColor by remember { mutableStateOf(Color.White) }
+    var backColor by remember { mutableStateOf(Color.Cyan) }
     var btnLabel by remember { mutableStateOf("Calulate GPA") }
 
     Column(
         modifier = Modifier
-        ,verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally
+            .fillMaxSize()
+            .background(backColor)
+        , verticalArrangement = Arrangement.Center
+        , horizontalAlignment = Alignment.CenterHorizontally
     ) {
 
-        TextField(
+        OutlinedTextField(
             value = grade1,
             onValueChange = { grade1 = it },Modifier.padding(16.dp),
             label = { Text("Course 1 Grade")}
         )
 
 
-        TextField(
+        OutlinedTextField(
             value = grade2,
             onValueChange = { grade2 = it },
             label = { Text("Course 2 Grade") },
@@ -53,7 +56,7 @@ fun GpaAppScreen() {
 
 
 
-        TextField(
+        OutlinedTextField(
             value = grade3,
             onValueChange = { grade3 = it },
             label = { Text("Course 3 Grade") },
