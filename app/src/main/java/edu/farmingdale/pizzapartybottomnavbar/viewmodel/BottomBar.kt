@@ -1,4 +1,4 @@
-package edu.farmingdale.pizzapartybottomnavbar
+package edu.farmingdale.pizzapartybottomnavbar.viewmodel
 
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
@@ -12,6 +12,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
+import edu.farmingdale.pizzapartybottomnavbar.movel.BottomNavigationItems
 
 @Composable
 fun BottomBar(

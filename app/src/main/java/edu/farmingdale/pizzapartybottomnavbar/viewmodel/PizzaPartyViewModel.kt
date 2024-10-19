@@ -1,4 +1,4 @@
-package edu.farmingdale.pizzapartybottomnavbar
+package edu.farmingdale.pizzapartybottomnavbar.viewmodel
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf

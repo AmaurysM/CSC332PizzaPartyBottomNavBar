@@ -1,4 +1,4 @@
-package edu.farmingdale.pizzapartybottomnavbar
+package edu.farmingdale.pizzapartybottomnavbar.viewmodel
 
 import kotlin.math.ceil
 

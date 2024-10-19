@@ -1,9 +1,14 @@
-package edu.farmingdale.pizzapartybottomnavbar
+package edu.farmingdale.pizzapartybottomnavbar.viewmodel
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import edu.farmingdale.pizzapartybottomnavbar.movel.BottomNavigationItems
+import edu.farmingdale.pizzapartybottomnavbar.view.GpaAppScreen
+import edu.farmingdale.pizzapartybottomnavbar.view.PizzaPartyScreen
+import edu.farmingdale.pizzapartybottomnavbar.view.Screen3
+import edu.farmingdale.pizzapartybottomnavbar.view.SplashScreen
 
 @Composable
 fun NavigationGraph(navController: NavHostController, onBottomBarVisibilityChanged: (Boolean) -> Unit) {
